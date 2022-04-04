@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="4.js"></script>
+	<meta charset="utf\-8">
+	<meta name="viewport" content="width=device\-width, initial\-scale=1">
+	<title>homework</title>
+	<style> 
+#one
+{
+font-size:30px;
+	color: grey;
+	text-align:50px;
+    
+}
+body
+{
+	margin-top:100px;
+	margin-bottom:100px;
+	margin-right:300px;
+	margin-left:300px;
+}
+</style>
+<script type="text/javascript">
+ var degFahren=prompt("Enter the degress in Fahrenheit",20);
+ var degCent=5/9*(degFahren-32);
+ alert(degCent);
+
+</script>
+<script type="text/javascript">
+	window.ONLOAD=function(){
+	var inp=document.querySelectorALL("input");
+	inp(2).onclick=function(){
+		var num1=Number(inp(0).value);
+		var num2=Number(inp(1).value);
+		sum=getSum(num1,num2);
+		alert(sum)
+	}
+}
+function getSum(num1,num2){
+	sum=num1+num2;
+	return sum;
+}
+</script>
+<script>
+	functiondisp_prompt()
+	{
+		var name=prompt("first name(a)",)
+		var name=prompt("last name(b)")
+		alert(Nice to meet you)
+	}
+</script>
+</head>
+
+
+<body>
+	<center>
+		<img id="img" src="1.jpg" width="200px" height="200px">
+
+	<p id="one" onclick="change()" onclick="popup()">O any thing, of nothing first create!
+O heavy lightness! serious vanity!
+Mis-shapen chaos of well-seeming forms!
+Feather of lead, bright smoke, cold fire,
+sick health!
+Still-waking sleep, that is not what it is!
+This love feel I, that feel no love in this.
+Dost thou not laugh?
+</p>
+	<input type="button" onclick="popup()" value="?">
+	<br>
+	<button onclick="CHANGE()" type="button" onclick="popup()">Click to change</button>
+	<!--Because the format is originally centered, for aesthetic purposes, left-alignment is used here-->
+	<br>
+		This is sum:
+		<input type="text" size="3">+
+		<input type="text" size="3">
+		<input type="button" value="=">
+
+	</center>
+
+</body>
+</html>
