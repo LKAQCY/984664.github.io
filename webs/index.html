@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Introduction</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#" class="active">Introduction</a></li>
+            <li><a href="abuse.html">Anti abuse</a></li>
+            <li><a href="speed.html">Speed and performance</a></li>
+            <li><a href="availability.html">Availability</a></li>
+            <li><a href="Extra.html">Turn on Private Relay</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <p><span class="highlight">iCloud Private Relay</span> is a new internet privacy service from Apple that allows users with iOS 15, iPadOS 15, or macOS Monterey on their devices and an iCloud+ subscription to connect to the internet and browse with Safari in a more secure and private way.</p>
+        <img src="https://b2c-contenthub.com/wp-content/uploads/2021/09/icloud-private-relay.jpg?quality=50&strip=all&w=1200">
+        <p>It only applies to Safari, Apple Mail apps and all DNS queries.</p>
+
+        <p>According to Apple, iCloud Private Relay has a two-hop structure. However, comparing to onion-routing or typical VPN, the two hops are almost fixed and close to the user.</p>
+        <p>WebRTC leak is found. Websites can get your real IP address by using WebRTC.When Private Relay is enabled, all of your browsing activity in Safari will be routed through two internet “hops,” or relays. Your data is encrypted and then sent to Apple, so your ISP can’t see any of your web browsing requests. Once at Apple’s proxy server, the DNS request (the thing that points a domain name like “macworld.com” to a specific server IP address) and your iPhone, iPad, or Mac’s IP address are separated. Your IP address is retained by Apple, while your DNS request is passed on, encrypted, to a “trusted partner” that has the decryption key, along with a fake intermediary IP address that is based on your approximate location. Apple didn’t name its partners, but some web sleuths have figured out that they are major internet backbone companies such as Akami, Cloudfare, and Fastly.</p>
+        <p>This means that Apple knows your IP address but not the name of the sites you’re visiting, and the trusted partner knows the site you’re visiting but not your IP (and therefore not who or where you are). Neither party can piece together a complete picture of both who you are and where you’re going.</p>
+            <p>The website you’re visiting typically gets your exact IP address and DNS request, so it can easily build a pretty detailed profile of exactly who you are, where you are, and where you’re going online. Combine that with a few cookies, even innocuous-seeming ones, and it’s pretty simple to have your entire online activity profiled, tracked, traced, and sold to advertisers (and others).</p>
+        <iframe width="900" height="506" src="https://www.youtube.com/embed/Ki8Srx4oAcs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <img src="Connect.png">
+        <p id="ipaddr" class="comment"></p>
+        <button onclick="showip()">Show my IP address</button>
+       
+    </div>
+    <script>
+        var ipval;
+        function recordData (data) {
+            ipval = 'Your ip address is <span class="highlight">' + data.ip + '</span> in: ' + data.city + ', ' + data.region + ', ' + data.country + '; ASN: ' + data.org + '.';
+        }
+    </script>
+    <script src="https://ipinfo.io/json?callback=recordData&token=a56f0687960740"></script>
+
+
+</body>
+
+</html>
