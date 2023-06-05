@@ -1,46 +1,53 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<HTML>
+    <head>
 
-<head>
-    <title>Introduction</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <script src="script.js"></script>
-</head>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-<body>
-    <div class="navbar">
-        <ul>
-            <li><a href="#" class="active">Introduction</a></li>
-            <li><a href="abuse.html">Anti abuse</a></li>
-            <li><a href="speed.html">Speed and performance</a></li>
-            <li><a href="availability.html">Availability</a></li>
-            <li><a href="Extra.html">Turn on Private Relay</a></li>
+    <title>Home page</title>
+           
+    </head>
+    
+    
+    
+ <body style="background-image:url(background.png); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+                <div class="top">
+        <center>
+        <ul style="color:orange; font-family:Georgia;" >
+            <li><a href="home%20page.html" style="color:brown;" >Home page</a></li>
+            <li><a href="Gameplay.html" style="color:brown;">Gameplay</a></li>
+            <li><a href="Characters.html" style="color:brown;">Characters</a></li>
+            <li><a href="Contact%20Form.html" style="color:brown;">Contact Form</a></li>
         </ul>
-    </div>
-    <div class="content">
-        <p><span class="highlight">iCloud Private Relay</span> is a new internet privacy service from Apple that allows users with iOS 15, iPadOS 15, or macOS Monterey on their devices and an iCloud+ subscription to connect to the internet and browse with Safari in a more secure and private way.</p>
-        <img src="https://b2c-contenthub.com/wp-content/uploads/2021/09/icloud-private-relay.jpg?quality=50&strip=all&w=1200">
-        <p>It only applies to Safari, Apple Mail apps and all DNS queries.</p>
+        </center>
+        </div>
+        
+     <center><h1 div class="title" style="margin-top:80px;font-size: 3em;" >Volcano Princess</h1>
+        <hr style='margin-right:400px; margin-left:400px;'>
+		<br>
+		<img src="homepage-p1.png" width="35%" alt="This is an introduction picture.">
+         <div class="title"><h2>Background of The Game</h2></div>
+            <div class='homepage'>The story happens in Volcano Kingdom in the medieval era of fantasy. In this kingdom, alchemy is very popular, at the same time, people there admire Chivalry and Volcano Queen. Players need to act as the father to arrange their daughter's life and accompany her growth. The daughter grows up in various ways, and eventually her career will be determined by her development at the age of 18. The game has up to 58 endings.</div> 
+		 
+		 <div class='title'><h2 style="margin-top:40px;">Game Storyline</h2></div></center>
+	 
+      <center><H2>Lords Choice</H2>
+		  <div class="homepage"><p title='storyline 1'>The daughter will enter the Knight Academy at the age of 12. The Knight Academy has three lords, each representing a different domain. Rebessa-Rollers represents combat, Gwineth-Claremont represents intercourse, and Kraut-Brain represents life. Joining one of the lords means achieving the "knight's goal"——Each goal will correspond to four levels of demand, which contains a large number of tasks, such as Rebessa is combat-related, Gwineth is the ball, performance, part-time jobs and other social-related, Kraut is farming, horse racing and other life-related. Complete the knight's goal can get a lot of money and prestige rewards. At the same time, the choice of the lord can affect the ending of the subsequent game~</p></div>
+	 <div class="image-container"><img src="Rebessa%EF%BC%88hp%EF%BC%89.jpg" height=450px alt="Rebessa.">
+	 <img src="Gwineth%EF%BC%88hp%EF%BC%89.jpg" height=450px alt="Gwineth.">
+		 <img src="Kraut%EF%BC%88hp%EF%BC%89.jpg" height=450px alt="Kraut."></div></center>
 
-        <p>According to Apple, iCloud Private Relay has a two-hop structure. However, comparing to onion-routing or typical VPN, the two hops are almost fixed and close to the user.</p>
-        <p>WebRTC leak is found. Websites can get your real IP address by using WebRTC.When Private Relay is enabled, all of your browsing activity in Safari will be routed through two internet “hops,” or relays. Your data is encrypted and then sent to Apple, so your ISP can’t see any of your web browsing requests. Once at Apple’s proxy server, the DNS request (the thing that points a domain name like “macworld.com” to a specific server IP address) and your iPhone, iPad, or Mac’s IP address are separated. Your IP address is retained by Apple, while your DNS request is passed on, encrypted, to a “trusted partner” that has the decryption key, along with a fake intermediary IP address that is based on your approximate location. Apple didn’t name its partners, but some web sleuths have figured out that they are major internet backbone companies such as Akami, Cloudfare, and Fastly.</p>
-        <p>This means that Apple knows your IP address but not the name of the sites you’re visiting, and the trusted partner knows the site you’re visiting but not your IP (and therefore not who or where you are). Neither party can piece together a complete picture of both who you are and where you’re going.</p>
-            <p>The website you’re visiting typically gets your exact IP address and DNS request, so it can easily build a pretty detailed profile of exactly who you are, where you are, and where you’re going online. Combine that with a few cookies, even innocuous-seeming ones, and it’s pretty simple to have your entire online activity profiled, tracked, traced, and sold to advertisers (and others).</p>
-        <iframe width="900" height="506" src="https://www.youtube.com/embed/Ki8Srx4oAcs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <img src="Connect.png">
-        <p id="ipaddr" class="comment"></p>
-        <button onclick="showip()">Show my IP address</button>
-       
-    </div>
-    <script>
-        var ipval;
-        function recordData (data) {
-            ipval = 'Your ip address is <span class="highlight">' + data.ip + '</span> in: ' + data.city + ', ' + data.region + ', ' + data.country + '; ASN: ' + data.org + '.';
-        }
-    </script>
-    <script src="https://ipinfo.io/json?callback=recordData&token=a56f0687960740"></script>
+		<div class="container-wrapper">
+			<div class="container">
+				<center><h2>Love Line</h2></center>
+				<p title="storyline 2">In the game, there are apparently 8 characters who can romance, but in reality, there are far more than just these 8 characters! Players can choose to let their daughters get married to these characters, or they can choose to let their daughters be single. If the player wants his daughter to get married to a specific person, they need to let her brush up on her good sense with the person and it is also necessary to trigger a side plot between the two.</p>
+			</div>
 
-
-</body>
-
-</html>
+			<div class="container">
+				<center><h2>Hidden Storyline</h2></center>
+				<p title="storyline 3">Throughout the game, players will occasionally encounter something unusual, which may well be a hint of a hidden storyline. But the line open conditions require players to play into specific conditions. The answer to the identity of the daughter, the real destination of the wife, and the reason why Rebessa is behaving strangely will all be answered in this hidden storyline.</p>
+			</div>
+		</div>
+    <a href='https://store.steampowered.com/app/1669980/_/' div class='text1'>Click to download</a>
+    </body>
+</HTML>

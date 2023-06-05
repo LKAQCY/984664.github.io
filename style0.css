@@ -1,0 +1,55 @@
+body{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    background-color: #282a36;
+}
+
+ul {
+  list-style-type: none;
+  margin: -0.5em;
+  padding: 0;
+  padding-left: 25em;
+  overflow: hidden;
+  background-color: #282a36;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #44475a;
+}
+
+.active {
+  background-color: #6272a4;
+}
+
+.content{
+    color: #f8f8f2;
+    background-color: #282a36;
+    margin: 5em 25em 5em 25em;
+}
+
+.highlight{
+    color: #ff79c6;
+}
+
+.comment{
+    color: #f1fa8c;
+}
+
+img{
+    width: 40em;
+}
+
+.lnk{
+    color: #8be9fd;
+}
